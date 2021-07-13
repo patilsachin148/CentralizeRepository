@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="7" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="80" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="80" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+      <class name="annotations.TestClasswithListnerImplemented">
+        <test-method status="PASS" signature="testMethod1()[pri:-7, instance:annotations.TestClasswithListnerImplemented@b7c004]" name="testMethod1" duration-ms="20" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method status="FAIL" signature="testMethod2()[pri:-5, instance:annotations.TestClasswithListnerImplemented@b7c004]" name="testMethod2" duration-ms="5" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.fail(Assert.java:53)
+at annotations.TestClasswithListnerImplemented.testMethod2(TestClasswithListnerImplemented.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method status="PASS" signature="testMethod5()[pri:0, instance:annotations.TestClasswithListnerImplemented@b7c004]" name="testMethod5" duration-ms="0" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod5 -->
+        <test-method status="PASS" signature="testMethod3()[pri:1, instance:annotations.TestClasswithListnerImplemented@b7c004]" name="testMethod3" duration-ms="0" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method status="PASS" signature="testMethod3()[pri:1, instance:annotations.TestClasswithListnerImplemented@b7c004]" name="testMethod3" duration-ms="5" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method status="PASS" signature="testMethod3()[pri:1, instance:annotations.TestClasswithListnerImplemented@b7c004]" name="testMethod3" duration-ms="0" started-at="2021-07-01T13:54:12Z" finished-at="2021-07-01T13:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method status="SKIP" signature="testMethod4()[pri:3, instance:annotations.TestClasswithListnerImplemented@b7c004]" name="testMethod4" duration-ms="0" started-at="2021-07-01T13:54:12Z" depends-on-methods="annotations.TestClasswithListnerImplemented.testMethod2" finished-at="2021-07-01T13:54:12Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestClasswithListnerImplemented.testMethod4()[pri:3, instance:annotations.TestClasswithListnerImplemented@b7c004] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestClasswithListnerImplemented.testMethod4()[pri:3, instance:annotations.TestClasswithListnerImplemented@b7c004] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+      </class> <!-- annotations.TestClasswithListnerImplemented -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

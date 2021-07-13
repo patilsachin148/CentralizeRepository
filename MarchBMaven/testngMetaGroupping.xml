@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteMGP">
+  <test thread-count="5" name="TestMGP">
+    
+    <groups>
+    <define name = "MetaGroup-1">
+    <include name = "Group-A"></include>
+    <include name = "Group-D"></include>
+    </define>
+     
+    
+    <run>
+    <include name = "MetaGroup-1"></include>
+    </run>
+    </groups>
+    
+    <classes>
+      <class name="groupMethods.Groupping"/>
+    </classes>
+  </test> <!-- TestMGP -->
+</suite> <!-- SuiteMGP -->
